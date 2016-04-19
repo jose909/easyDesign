@@ -17,6 +17,12 @@ gem 'bootstrap-sass', '~> 3.2.0.2'
 gem 'devise', '~> 3.4.1'
 #Agrega font-awesome a la aplicacion
 gem 'font-awesome-rails'
+#Instlalacion de Omniauth
+gem 'omniauth'
+#Instalacion del middleware de facebook
+gem 'omniauth-facebook'
+#Instalacion del middleware de twitter
+gem 'omniauth-twitter'
 #
 
 # Use CoffeeScript for .coffee assets and views
