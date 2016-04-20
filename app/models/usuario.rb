@@ -6,6 +6,7 @@ class Usuario < ActiveRecord::Base
 
   devise :omniauthable, omniauth_providers: [:facebook, :twitter]
 
+	validates :username, presence: true, uniqueness: true
   
 
 	#validate :validacion_personalizada, on: :create
