@@ -6,6 +6,12 @@ class Usuario < ActiveRecord::Base
 
   devise :omniauthable, omniauth_providers: [:facebook, :twitter]
 
+  has_many :posts
+
+  def email_required?
+    false
+  end
+
 	validates :username, presence: true, uniqueness: true
   
 
@@ -23,7 +29,8 @@ class Usuario < ActiveRecord::Base
 										  			uid: auth[:uid],
 										  			provider: auth[:provider],
 										  			password: Devise.friendly_token[0,20])
-	  	end     	
+	  	end 
+      usuario    	
   end 
 
   # private
