@@ -18,8 +18,7 @@ Devise.setup do |config|
 
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
 
-  config.omniauth :twitter, "atkC7Jofq2t27sBzN0DafZ209", "6ktdKyXD5JEOEHDj1ZKpb0VZFrLpyfvSrDXFheXSdW5zdTcu4g"
-
+  config.omniauth :twitter, "APP_ID", "APP_SECRET"
   config.omniauth :facebook, "APP_ID", "APP_SECRET"
   
   OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development?
