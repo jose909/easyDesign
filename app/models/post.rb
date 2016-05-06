@@ -3,6 +3,6 @@ class Post < ActiveRecord::Base
   has_many :attachments
   validates :titulo, presence: true, uniqueness: true
 
-  
+  include Picturable
  
 end
