@@ -9,7 +9,7 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
+##########################################################################
 # los gem que he agregado para el proyecto
 #Adds bootstrap framework to  our apliaction
 gem 'bootstrap-sass', '~> 3.2.0.2'
@@ -23,7 +23,9 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 #Instalacion del middleware de twitter
 gem 'omniauth-twitter'
-#
+#PublicActivity maneja el feed
+gem "public_activity"
+############################################################################
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
