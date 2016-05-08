@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   belongs_to :usuario, dependent: :destroy
   has_many :attachments
+  has_many :payments
   validates :titulo, presence: true, uniqueness: true
   before_save :valores_por_default
   include Picturable

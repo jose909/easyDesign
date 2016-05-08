@@ -3,6 +3,9 @@
 	<div>
 		<%= @post.contenido %>
 	</div>
+	<% if usuario_signed_in? %>
+		<%= render "payments/form", payment: Payment.new, post: @post %>
+	<%end%>
 </div>
 <div class="text-right">
 	<% if @post.usuario and usuario_signed_in? and @post.usuario == current_usuario  %>

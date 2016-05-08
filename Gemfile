@@ -25,6 +25,8 @@ gem 'omniauth-facebook'
 gem 'omniauth-twitter'
 #PublicActivity maneja el feed
 gem "public_activity"
+#ActiveMerchant para manejar los pagos
+gem 'activemerchant'
 ############################################################################
 
 # Use CoffeeScript for .coffee assets and views
