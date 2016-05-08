@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get "/carrito", to: "payments#carrito"
+  get 'payments/express'
   resources :attachments
   resources :payments
   resources :posts
